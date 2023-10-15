@@ -1,0 +1,98 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0;
+  background: url(/images/bg-pattern-desktop.svg) no-repeat;
+  background-size: 60%;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 70px;
+  font-weight: 300;
+  margin-block: 80px 25px;
+  color: hsl(0, 36%, 70%);
+  letter-spacing: 20px;
+}
+strong {
+  font-weight: 600;
+  color: #423a3a;
+}
+p {
+  color: hsl(0, 36%, 70%);
+  font-weight: 600;
+  line-height: 2;
+  font-size: 17px;
+}
+.container {
+  display: flex;
+}
+.content-side {
+  padding: 60px 280px 0 170px;
+}
+.desktop-hero {
+  width: 60%;
+}
+form {
+  display: flex;
+  position: relative;
+}
+::placeholder {
+  color: hsl(0, 36%, 70%);
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.6;
+}
+input:focus {
+  outline: none;
+  border: 1px solid hsla(0, 36%, 70%, 0.8);
+}
+button {
+  border: none;
+  border-radius: 25px;
+  padding: 15px 40px;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  position: absolute;
+  right: 0;
+}
+button:hover {
+  cursor: pointer;
+  box-shadow: 0px 15px 20px #efd3d4;
+  background: #f9cfcf;
+}
+.error-icon {
+  position: absolute;
+  right: 22%;
+  top: 25%;
+}
+input {
+  width: 100%;
+  padding: 18px 30px;
+  border-radius: 25px;
+  border: solid 1px hsla(0, 36%, 70%, 0.8);
+}
+.error-msg {
+  font-size: 14px;
+  margin-inline: 30px;
+  margin-top: 10px;
+  color: hsl(0, 93%, 68%);
+}
+.error-input,
+.error-input:focus {
+  border: 2px solid hsl(0, 93%, 68%);
+}
+.hidden {
+  display: none;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 90px;
+}
+.attribution a {
+  color: hsl(0, 6%, 24%);
+}
